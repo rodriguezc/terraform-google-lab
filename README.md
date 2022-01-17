@@ -5,3 +5,8 @@ module.<nomdumodule>.<type>.<nomdelaressource>
 terraform import module.instances.google_compute_instance.tf-instance-1 tf-instance-1
 ```
 
+Ca va mettre dans le state teerraform l etat actuel
+Ensuite faut recopier l'état dans les sources
+```
+terraform show > ./modules/instances.tf
+```
